@@ -1,222 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en,pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Thoughts</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 60px 0 40px;
-            border-bottom: 1px solid #e0e0e0;
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
-        .subtitle {
-            color: #666;
-            font-size: 15px;
-        }
-
-        nav {
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: #666;
-            text-decoration: none;
-            margin-right: 24px;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
-
-        nav a:hover {
-            color: #000;
-        }
-
-        article {
-            margin-bottom: 60px;
-            padding-bottom: 60px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        article:last-child {
-            border-bottom: none;
-        }
-
-        .post-meta {
-            color: #999;
-            font-size: 13px;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            letter-spacing: -0.3px;
-        }
-
-        h2 a {
-            color: #000;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-
-        h2 a:hover {
-            opacity: 0.6;
-        }
-
-        .excerpt {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-
-        .read-more {
-            color: #000;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-            border-bottom: 1px solid #000;
-            padding-bottom: 2px;
-            transition: opacity 0.2s;
-        }
-
-        .read-more:hover {
-            opacity: 0.6;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #f5f5f5;
-            color: #666;
-            padding: 4px 12px;
-            font-size: 12px;
-            margin-right: 8px;
-            margin-top: 12px;
-            border-radius: 3px;
-        }
-
-        footer {
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #e0e0e0;
-            text-align: center;
-            color: #999;
-            font-size: 13px;
-        }
-
-        @media (max-width: 640px) {
-            body {
-                padding: 16px;
-            }
-
-            header {
-                padding: 40px 0 30px;
-                margin-bottom: 40px;
-            }
-
-            h1 {
-                font-size: 24px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
-        }
-    </style>
+    <title>ricardoludwig.com.br</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Teste Tech Thoughts</h1>
-            <p class="subtitle">Exploring technologies, one post at a time</p>
+            <a href="/" class="site-title">ricardoludwig.com.br</a>
             <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#archive">Archive</a>
+                <a href="#prog">Artigos</a>
+                <a href="#about">Sobre mim</a>
             </nav>
         </header>
-
         <main>
             <article>
-                <div class="post-meta">Oct 11, 2025</div>
-                <h2><a href="#post">The Beauty of Simple Code</a></h2>
-                <p class="excerpt">
-                    Complexity is easy. Anyone can add features, dependencies, and abstractions. 
-                    But simplicity? That takes real thought. In this post, I explore why writing 
-                    simple, maintainable code is one of the hardest—and most valuable—skills in 
-                    software engineering.
+                <div class="article-date">Outubro 20, 2025</div>
+                <h2><a href="#">Why Senior Engineers Write Less Code</a></h2>
+                <p class="article-preview">
+                    I spent three months shadowing senior engineers at five 
+                    different companies. What I discovered challenged everything 
+                    I thought I knew about career progression in tech. 
+                    The best engineers aren't the ones writing the most 
+                    code—they're the ones preventing bad code from being 
+                    written in the first place.
                 </p>
-                <a href="#post" class="read-more">Read more →</a>
-                <div>
-                    <span class="tag">Software Engineering</span>
-                    <span class="tag">Best Practices</span>
-                </div>
-            </article>
-
-            <article>
-                <div class="post-meta">Oct 4, 2025</div>
-                <h2><a href="#post">Understanding Distributed Systems</a></h2>
-                <p class="excerpt">
-                    Distributed systems are everywhere—from microservices to cloud infrastructure. 
-                    But they come with unique challenges: network failures, consistency issues, 
-                    and latency. Let's break down the fundamentals and explore patterns that actually work.
-                </p>
-                <a href="#post" class="read-more">Read more →</a>
-                <div>
-                    <span class="tag">Architecture</span>
-                    <span class="tag">Distributed Systems</span>
-                </div>
-            </article>
-
-            <article>
-                <div class="post-meta">Sep 27, 2025</div>
-                <h2><a href="#post">Why I Chose Rust for My Side Project</a></h2>
-                <p class="excerpt">
-                    After years of working with various languages, I decided to build my latest 
-                    side project in Rust. The learning curve was steep, but the benefits—memory 
-                    safety, performance, and fearless concurrency—made it worthwhile.
-                </p>
-                <a href="#post" class="read-more">Read more →</a>
-                <div>
-                    <span class="tag">Rust</span>
-                    <span class="tag">Side Projects</span>
-                </div>
+                <a href="#" class="read-more">Leia mais</a>
             </article>
         </main>
-
         <footer>
-            <p>© 2025 Tech Thoughts. Built with simplicity in mind.</p>
+            <div class="footer-links">
+                <a href="#prog">Código</a>
+                <a href="#arch">Arquitetura</a>
+                <a href="#about">Sobre mim</a>
+                <a href="https://www.linkedin.com/in/ricardo-ludwig/">LinkedIn</a>
+                <a href="https://github.com/ricardoludwig/">Github</a>
+            </div>
+            <p>&copy; 2025 ricardoludwig.com.br. Todos os direitos reservados.</p> 
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
