@@ -114,6 +114,28 @@ h2 a:hover {
     line-height: 1.7;
 }
 
+.container-image {
+    padding-bottom: 5%;
+
+}
+
+.round-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.about-me-text {
+   font-size: 16px;
+   color: #444;
+   line-height: 1.7;
+   margin-bottom: 15px;
+   margin-left: 200px;
+   margin-top: -200px;
+}
+
 .read-more {
     color: #0066cc;
     text-decoration: none;
@@ -236,5 +258,26 @@ footer {
 
     .newsletter-form {
         flex-direction: column;
+    }
+
+    .container-image {
+        text-align: center;
+    
+    }
+    .round-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .about-me-text {
+       font-size: 16px;
+       color: #444;
+       line-height: 1.7;
+       margin-bottom: 15px;
+       margin-left: 0px;
+       margin-top: 0px;
     }
 }
